@@ -1,0 +1,69 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #111;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.ticket {
+  background: white;
+  color: black;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  width: 300px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: none;
+  background: #e50914;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.ticket {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.ticket h2 {
+  margin-bottom: 20px;
+}
+/* Tablet */
+@media (max-width: 768px) {
+  .movie-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .seats {
+    grid-template-columns: repeat(8, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .movie-grid {
+    grid-template-columns: 1fr;
+  }
+  .seats {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .signin-btn {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+}
+.container, .ticket {
+  max-width: 90%;
+}
